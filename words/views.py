@@ -11,4 +11,4 @@ def index(request):
 
 def word_view(request, id):
     w = Word.objects.get(pk = id)
-    return render_to_response('words/word_view', {'word' : w})
+    return render_to_response('words/word_view.html', {'word' : w})
