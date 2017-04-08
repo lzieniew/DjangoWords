@@ -7,7 +7,7 @@ class Chapter(models.Model):
     number = models.IntegerField(default = 0)
 
     def __str__(self):
-        return 'Chapter: ' + self.number + ', ' + self.name
+        return 'Chapter: ' + str(self.number) + ', ' + self.name
 
 class Word(models.Model):
     eng = models.CharField(max_length = 200)
@@ -20,6 +20,6 @@ class Word(models.Model):
         return self.eng + ' - ' + self.pol + ' <' + self.spelling + '>'
 
     def expanded_str(self):
-        return 'Eng: ' + self.eng + ', Pol: ' + self.pol + '<' + self.spelling + '> poziom: ' + self.level + ', rozdzial' + self.chapter
+        return 'Eng: ' + self.eng + ', Pol: ' + self.pol + '<' + self.spelling + '> poziom: ' + str(self.level) + ', rozdzial' + self.chapter
 
 
