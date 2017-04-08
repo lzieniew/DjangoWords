@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Chapter(models.Model):
-    name = models.CharField(max_length = 200)
+    name = models.CharField(max_length = 200, default=0)
     number = models.IntegerField(default = 0)
 
     def __str__(self):
