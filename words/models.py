@@ -6,7 +6,7 @@ class Word(models.Model):
     eng = models.CharField(max_length = 200)
     pol = models.CharField(max_length = 200)
     spelling = models.CharField(max_length=200, default = "")
-    level = models.IntegerField(default = 0)
+    level = models.IntegerField(default = -2)
     chapter = models.IntegerField(default = 1)
 
     def __str__(self):
