@@ -25,12 +25,13 @@ SECRET_KEY = '7!efh((*+_29%zfj_g@efmx#zrn1k-cloc02&(20-)^zq4)skq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'fisent.pythonanywhere.com']
+ALLOWED_HOSTS = [u'fisent.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'words',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
