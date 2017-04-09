@@ -6,9 +6,7 @@
         <font size = 5> {{chapter}} </font></li>
         <ul>
             {% for word in dictionary.values %}
-                {% if word.chapter == chapter %}
-                    <li> {{word}} </li>
-                {% endif %}
+                <li> {{word}} </li>
             {% endfor %}
         </ul>
 
