@@ -21,3 +21,6 @@ def quiz(request):
     rand = random.sample(list(array), 1);
     o = rand[0]
     return render_to_response('words/quiz.html', {'word' : o})
+
+def answer(request):
+    return HttpResponse('sprawdzanie odpowiedzi')

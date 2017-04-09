@@ -1,3 +1,7 @@
 <h1>Quiz</h1>
 <font size="15">{{word.eng}}</font>
-<form type="text">tu wpisz odpowiedź</form>
+<form action="answer" method="post">
+    <label for="answer">odpowiedz</label>
+    <input id="answer" type="text" name="answer" value="tutaj opowiedz">
+    <input type="submit" value="Sprawdź">
+</form>
