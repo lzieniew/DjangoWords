@@ -6,9 +6,9 @@
         <font size = 8> {{chapter}} </font>
         <ul>
             {% for word in dictionary.values %}
-                {% if word.chapter.id != chapter.id %}
+                {% if word.chapter_id != chapter %}
                     <li> <font size="6"> {{word.string}} </font> </li>
-                    <li>rozdzial to {{ word }}</li>
+                    <li>rozdzial to {{ word.chapter_id }}</li>
                 {% endif %}
             {% endfor %}
         </ul>
