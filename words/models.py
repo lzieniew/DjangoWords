@@ -20,9 +20,6 @@ class Word(models.Model):
     def word_to_string(self):
         self.string = self.__str__();
 
-    def __init__(self):
-        self.string = self.eng + ' - ' + self.pol + ' <' + self.spelling + '>'
-
     def __str__(self):
         return self.eng + ' - ' + self.pol + ' <' + self.spelling + '>'
 
