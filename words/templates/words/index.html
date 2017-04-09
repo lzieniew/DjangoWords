@@ -1,8 +1,16 @@
 <h1> <font size = 20>Słówka</font></h1>
 
 <ul>
-    {% for word in my_array %}
-    <li> <font size = 5> {{word}} </font> <a href="{{word.id}}/word">link</a>></li>
+    {% for chapter in chapters %}
+    <li>
+        <font size = 5> {{chapter}} </font></li>
+        <ul>
+            {% for word in dictionary.values %}
+                {% if word.chapter = chapter %}
+                    <li> word </li>
+                {% endif %}
+
+        </ul>
 
     {% endfor %}
 </ul>
