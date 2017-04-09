@@ -13,6 +13,7 @@ def index(request):
 
     for w in array:
         w.word_to_string()
+        w.save()
 
     dict = {}
     for word in array:
