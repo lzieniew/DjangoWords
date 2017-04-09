@@ -18,6 +18,6 @@ def word_view(request, id):
 
 def quiz(request):
     array = Word.objects.all()
-    rand = random.sample(array, 1);
+    rand = random.sample(list(array), 1);
     o = rand[0]
     return render_to_response('words/quiz.html', {'word' : o})
