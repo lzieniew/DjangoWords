@@ -6,7 +6,7 @@
         <font size = 5> {{chapter}} </font></li>
         <ul>
             {% for word in dictionary.values %}
-                <li> {{word}} </li>
+                <li> {{word.__str__}} </li>
             {% endfor %}
         </ul>
 
