@@ -16,6 +16,9 @@ class Word(models.Model):
     level = models.IntegerField(default = -2)
     chapter = models.ForeignKey(Chapter)
 
+    def word_to_string(self):
+        self.string = self.__str__();
+
     def __init__(self):
         self.string = self.eng + ' - ' + self.pol + ' <' + self.spelling + '>'
 

@@ -11,6 +11,9 @@ from .models import Word, Chapter
 def index(request):
     array = Word.objects.all()
 
+    for w in array:
+        w.write_to_string()
+
     dict = {}
     for word in array:
         dict[word.chapter.__str__()] = word
