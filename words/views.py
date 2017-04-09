@@ -12,7 +12,7 @@ def index(request):
     array = Word.objects.all()
 
     for w in array:
-        w.write_to_string()
+        w.word_to_string()
 
     dict = {}
     for word in array:
