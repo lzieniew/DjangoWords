@@ -6,7 +6,7 @@
         <font size = 8> {{chapter}} </font>
         <ul>
             {% for word in dictionary.values %}
-                {% if word.chapter != chapter %}
+                {% if word.chapter.id != chapter.id %}
                     <li> <font size="6"> {{word.string}} </font> </li>
                     {{word.chapter.id}}
                 {% endif %}
