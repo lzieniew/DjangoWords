@@ -3,13 +3,13 @@
 <ul>
     {% for chapter in chapters %}
     <li>
-        <font size = 8> {{chapter}} </font></li>
+        <font size = 8> {{chapter}} </font>
         <ul>
             {% for word in dictionary.values %}
-            <li> <font size="6"> {word} </font> </li>
+            <li> <font size="6"> {{word}} </font> </li>
             {% endfor %}
         </ul>
-
+    </li>
     {% endfor %}
 </ul>
 
