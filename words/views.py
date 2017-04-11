@@ -35,5 +35,5 @@ def answer(request):
     return HttpResponse('sprawdzanie odpowiedzi')
 
 def exercise(request):
-    array = Word.objects.filter(chapter=0)
+    array = Word.objects.all()
     return render_to_response('words/exercise.html', {'words':array})
