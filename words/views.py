@@ -33,3 +33,7 @@ def quiz(request):
 
 def answer(request):
     return HttpResponse('sprawdzanie odpowiedzi')
+
+def exercise(request):
+    array = Word.objects.filter(chapter=0)
+    return render_to_response('words/exercise.html', {'words':array})
