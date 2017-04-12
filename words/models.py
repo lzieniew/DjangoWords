@@ -21,7 +21,7 @@ class Word(models.Model):
         self.string = self.__str__();
 
     def __str__(self):
-        return self.eng + ' - ' + self.pol + ' <' + self.spelling + '>' + '(poziom: ' + str(self.level) + ')'
+        return self.eng + ' - ' + self.pol + ' <' + self.spelling + '>'
 
     def expanded_str(self):
         return 'Eng: ' + self.eng + ', Pol: ' + self.pol + '<' + self.spelling + '> poziom: ' + str(self.level) + ', rozdzial' + self.chapter

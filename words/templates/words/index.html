@@ -1,4 +1,4 @@
-<h1> <font size = 20>Słówka</font></h1>
+﻿<h1> <font size = 20>Słówka</font></h1>
 
 <ul>
     {% for chapter in chapters %}
@@ -7,7 +7,7 @@
         <ul>
             {% for word in dictionary.values %}
                 {% if word.chapter_id == chapter.id %}
-                    <li> <font size="6"> {{word.string}} </font> </li>
+                    <li> <font size="6"> {{word.string}} </font> <br> </li>
                 {% endif %}
             {% endfor %}
         </ul>
