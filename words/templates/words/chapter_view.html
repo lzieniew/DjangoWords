@@ -1,5 +1,5 @@
 {% for word in words %}
-    {% if word.chapter_id == id %}
+    {% if word.chapter_id == chapter.id %}
         <font size="8">{{word}}</font>
     {% endif %}
 {% endfor %}
