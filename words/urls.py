@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^(?P<id>[0-9]+)/word/$', views.word_view, name = 'word_view'),
     url(r'^quiz/$', views.quiz, name = 'quiz'),
     url(r'^quiz/answer/$', views.answer, name="answer"),
-    url(r'^exercise/$', views.exercise, name='exercise')
+    url(r'^exercise/$', views.exercise, name='exercise'),
+    url(r'^chapter/(?P<chapter_id>[0-9]+)/$', views.chapter, name = 'chapter_view')
 ]

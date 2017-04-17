@@ -25,6 +25,10 @@ def word_view(request, id):
     w = Word.objects.get(pk = id)
     return render_to_response('words/word_view.html', {'word' : w})
 
+def chapter(request, chapter_id):
+    c = Chapter.objects.get(pk = chapter_id)
+    return render_to_response('words/chapter_view.htmml', {'chapter', c})
+
 def quiz(request):
     array = Word.objects.all()
     rand = random.sample(list(array), 1);
