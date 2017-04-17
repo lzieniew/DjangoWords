@@ -3,7 +3,7 @@
 <ul>
     {% for chapter in chapters %}
     <li>
-        <font size = 8> {{chapter}} </font>
+        <a href="chapter/{{chapter.id}}"><font size = 8> {{chapter}} </font> </a>
         <ul>
             {% for word in dictionary.values %}
                 {% if word.chapter_id == chapter.id %}
