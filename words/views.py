@@ -26,8 +26,8 @@ def word_view(request, id):
     return render_to_response('words/word_view.html', {'word' : w})
 
 def chapter(request, chapter_id):
-    c = Chapter.objects.order_by('level')
-    return render_to_response('words/chapter_view.html', {'chapter': c, 'words': Word.objects.all()})
+    c = Chapter.objects.all()
+    return render_to_response('words/chapter_view.html', {'chapter': c, 'words': Word.objects.sorted_by('level')})
 
 def quiz(request):
     array = Word.objects.all()
