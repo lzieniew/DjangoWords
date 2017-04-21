@@ -14,7 +14,7 @@ class Word(models.Model):
     pol = models.CharField(max_length = 200)
     spelling = models.CharField(max_length=200, default = "")
     level = models.IntegerField(default = -2)
-    chapter = models.ForeignKey(Chapter)
+    chapter = models.ForeignKey(Chapter, default=6)
     string = models.CharField(max_length=200, default='a')
 
     def word_to_string(self):
