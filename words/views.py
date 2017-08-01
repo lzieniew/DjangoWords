@@ -43,4 +43,4 @@ def exercise(request):
     return render_to_response('words/exercise.html', {'words':array})
 
 def test_view(request):
-    return HttpResponse("jeden, dwa, trzy")
+    return ("jeden, dwa, trzy")
