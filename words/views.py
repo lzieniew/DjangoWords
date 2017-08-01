@@ -41,3 +41,6 @@ def answer(request):
 def exercise(request):
     array = Word.objects.all()
     return render_to_response('words/exercise.html', {'words':array})
+
+def test_view(request):
+    return("jeden, dwa, trzy")

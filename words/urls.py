@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^quiz/$', views.quiz, name = 'quiz'),
     url(r'^quiz/answer/$', views.answer, name="answer"),
     url(r'^exercise/$', views.exercise, name='exercise'),
-    url(r'^chapter/(?P<chapter_id>[0-9]+)/$', views.chapter, name = 'chapter_view')
+    url(r'^chapter/(?P<chapter_id>[0-9]+)/$', views.chapter, name = 'chapter_view'),
+    url(r'^dupa/$', views.test_view, name='test')
 ]
